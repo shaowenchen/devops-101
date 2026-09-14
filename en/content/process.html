@@ -1,0 +1,360 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Process and Method · DevOps 101</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="platform.html" />
+    
+    
+    <link rel="prev" href="culture.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.chenshaowen.com/" target="_blank" class="custom-link">DevOps 101</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Course Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="not-devops.html">
+            
+                <a href="not-devops.html">
+            
+                    
+                    What DevOps Is Not
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="devops.html">
+            
+                <a href="devops.html">
+            
+                    
+                    What DevOps Is
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                    DevOps in Practice
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="culture.html">
+            
+                <a href="culture.html">
+            
+                    
+                    Team Culture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="process.html">
+            
+                <a href="process.html">
+            
+                    
+                    Process and Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="platform.html">
+            
+                <a href="platform.html">
+            
+                    
+                    Tooling Platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Process and Method</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="process-and-method">Process and Method</h1>
+<h2 id="distinguish-steady-state-from-agile-state">Distinguish Steady State from Agile State</h2>
+<p>In 2014 Gartner proposed the idea of bimodal IT: predictable business uses traditional waterfall development, the steady state; exploratory business uses agile development, the agile state.</p>
+<p>Steady-state projects have long cycles, large development efforts, and high risk; they are clear and concrete.</p>
+<p><img src="../images/steady-1.png" style="width:500px;height:300px"></p>
+<p><img src="../images/steady-2.png" style="width:500px;height:300px"></p>
+<p>Agile-state projects have uncertain requirements and need fast responses; they are fuzzy and directional.</p>
+<p><img src="../images/agile-1.png" style="width:500px;height:100px"></p>
+<p>Today most internet projects suit the agile state better.</p>
+<p>Internet projects iterate quickly, release frequently, and their requirements keep changing.</p>
+<h2 id="branching-model">Branching Model</h2>
+<ul>
+<li>Feature development</li>
+</ul>
+<p>Every small feature gets its own feature branch. Feature-based development keeps features independent, allows parallel work on features, and means an unfinished feature does not affect the main branch.</p>
+<ul>
+<li>Trunk integration</li>
+</ul>
+<p>Merge code into the main branch as early as possible, and run continuous integration on the main branch.
+Suppose each iteration has N features. If those features are all merged into the main branch on the same day, cross-validating whether they meet expectations costs on the order of N ^ 2. But if each feature, once developed and self-tested, immediately opens an MR/PR and merges into the main branch, the merge cost for N features drops to the order of N.</p>
+<p>Opening merge requests as early as possible tells other developers about your changes sooner. During development, other developers can then resolve most conflicts themselves.</p>
+<ul>
+<li>Release branches</li>
+</ul>
+<p>Create a new branch for every release rather than releasing the main branch.
+Suppose you need to ship version 2.1. First create release branch 2.1 from the main branch, test on 2.1, and merge defects back to the main branch. Once it passes acceptance, tag the 2.1 branch as 2.1.0 and release it.</p>
+<p>After the release, if tag 2.1.0 has a defect, fix it on branch 2.1, merge the fix back to the main branch, tag 2.1.1, and ship again.</p>
+<p>The advantage of release branches is that released versions are traceable, and developers can fix a release and keep shipping. On the other side, a release branch does not hold up new feature work and is not disturbed by trunk integration.</p>
+<p>Testing determines the pace of agile development.</p>
+<h2 id="scrum-iterations">Scrum Iterations</h2>
+<p>Scrum is a framework for developing and sustaining complex products, an incremental and iterative development process. The whole development effort is divided into Sprints, each one to two weeks.</p>
+<p>Every Sprint should include at least one complete release that delivers the expected functionality.</p>
+<p>In concrete terms, the steps are:</p>
+<ul>
+<li>Hold a meeting each iteration to define scope and goals</li>
+<li>Show progress in real time on a board</li>
+<li>Hold a daily standup to surface difficulties and ask for help</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="culture.html" class="navigation navigation-prev " aria-label="Previous page: Team Culture">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="platform.html" class="navigation navigation-next " aria-label="Next page: Tooling Platform">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Process and Method","level":"1.4.2","depth":2,"next":{"title":"Tooling Platform","level":"1.4.3","depth":2,"path":"content/platform.md","ref":"content/platform.md","articles":[]},"previous":{"title":"Team Culture","level":"1.4.1","depth":2,"path":"content/culture.md","ref":"content/culture.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"serif","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","twitter","weibo","weibo","instapaper"]},"gitbook":{"ga":{"token":"G-TRHEYFQGW4"}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","keywords":"DevOps,101,","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DevOps 101","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sidebar":{"DevOps 101":"https://www.chenshaowen.com/"},"tail":{"DevOps 101":"https://www.chenshaowen.com/devops-101/"},"gitbook":false},"introduction":{"path":"README.md","title":"DevOps 101"},"gitbook":"*","description":"DevOps 101"},"file":{"path":"content/process.md","mtime":"2026-09-14T01:54:34.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-09-14T01:55:16.783Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
